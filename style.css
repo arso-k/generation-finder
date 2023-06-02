@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f1efdc;
+  color: #d36b00;
+  font-family: Righteous;
+}
+
+.heading-primary {
+  color: #42032c;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1.2rem;
+}
+
+.input-container {
+  height: 50vh;
+  overflow-x: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.label-style {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+}
+
+.input-style {
+  padding: 0.9rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  border: 0;
+  color: #d36b00;
+}
+
+.button-style {
+  padding: 1rem 2rem;
+  background-color: #d36b00;
+  color: #f1efdc;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.button-style:hover {
+  color: #e6d2aa;
+}
+
+#result {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  color: #42032c;
+}
