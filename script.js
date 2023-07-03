@@ -1,3 +1,10 @@
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Enter') {
+    event.preventDefault(); // Prevent the default Enter key behavior
+    document.getElementById('button').click(); // Simulate a button click
+  }
+});
+
 function identifyGeneration() {
   var birthYear = document.getElementById('birthYear').value;
   var generation = '';
