@@ -13,8 +13,14 @@
 
     <div class="input-container">
       <label class="label-style" for="birthYear">Enter your birth year:</label>
-      <input class="input-style" type="number" id="birthYear" min="1901" />
-      <button class="button-style" id="button" onclick="identifyGeneration()">
+      <input
+        class="input-style"
+        type="number"
+        id="birthYear"
+        min="1901"
+        onkeypress="onEnter(event)"
+      />
+      <button class="button-style" id="button" onclick="calcRenderGeneration()">
         Identify
       </button>
     </div>

@@ -1,11 +1,12 @@
-document.addEventListener('keydown', function (event) {
-  if (event.key === 'Enter') {
-    event.preventDefault(); // Prevent the default Enter key behavior
-    document.getElementById('button').click(); // Simulate a button click
-  }
-});
+function onEnter(ev) {
+  // ev.preventDefault();
 
-function identifyGeneration() {
+  if (ev.keyCode === 13) {
+    calcRenderGeneration();
+  }
+}
+
+function calckGeneration() {
   var birthYear = document.getElementById('birthYear').value;
   var generation = '';
 
@@ -35,5 +36,13 @@ function identifyGeneration() {
       generation = 'Unknown';
   }
 
-  document.getElementById('result').innerText = 'You belong to: ' + generation;
+  return generation;
+}
+function renderGenerationOnPage(generation) {
+  document.getElementById('result').innerText = `You belong to ${generation}`;
+}
+
+function calcRenderGeneration() {
+  const generation = calckGeneration();
+  renderGenerationOnPage(generation);
 }
